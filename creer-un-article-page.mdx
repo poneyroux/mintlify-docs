@@ -1,4 +1,124 @@
 ---
-title: 'Créer un article/page'
+title: "Créer un article/page"
 ---
 
+Articles et pages se créent de la même façon dans WordPress. La différence essentielle : un article est daté et classé par catégorie (actualités, blog), une page est statique et intemporelle (Accueil, Contact, Mentions légales). Les deux utilisent le même éditeur : Gutenberg.
+
+Pour créer un article : Articles \> Ajouter.
+
+Pour créer une page : Pages \> Ajouter.
+
+## La colonne latérale de l'éditeur
+
+<Danger>
+   La colonne latérale doit rester ouverte en permanence lors de la rédaction. Elle contient la quasi-totalité des réglages utiles à l'examen.
+</Danger>
+
+Elle s'affiche à droite de l'éditeur et comporte deux onglets :
+
+Article / Page : visibilité, date de publication, auteur, image mise en avant, format, catégories, étiquettes, commentaires. C'est ici que se trouvent la plupart des options à configurer avant publication.
+
+Bloc : options propres au bloc actuellement sélectionné dans l'éditeur (typographie, couleurs, espacement, alignement, texte alternatif pour les images, etc.).
+
+Si la colonne est fermée, cliquer sur l'icône Réglages en haut à droite de l'éditeur pour l'afficher.
+
+CAPTURE D'ÉCRAN
+
+## Les catégories
+
+Dans l'onglet Article de la colonne latérale, la section Catégories permet d'associer l'article à une ou plusieurs catégories existantes. Il est également possible d'en créer une nouvelle directement sans quitter l'éditeur, via le lien Ajouter une nouvelle catégorie.
+
+Les pages, elles, ne sont pas organisées par catégories.
+
+## L'éditeur Gutenberg
+
+Gutenberg est l'éditeur natif de WordPress. Il fonctionne sur le principe des blocs : chaque élément de contenu est un bloc indépendant (titre, paragraphe, image, bouton, tableau, etc.) que l'on peut déplacer, dupliquer ou supprimer.
+
+Pour ajouter un bloc : cliquer sur le bouton + dans l'éditeur, ou taper / directement dans une zone vide pour rechercher un type de bloc.
+
+CAPTURE D'ÉCRAN
+
+## Les blocs natifs
+
+Les blocs attendus au référentiel sont les suivants :
+
+| Titre      | Structurer le contenu (H2, H3…)           |
+| ---------- | ----------------------------------------- |
+| Paragraphe | Texte courant                             |
+| Image      | Insérer un visuel depuis la médiathèque   |
+| Galerie    | Afficher plusieurs images en grille       |
+| Bouton     | Appel à l'action cliquable                |
+| Bannière   | Image de fond avec texte superposé        |
+| Tableau    | Données structurées en lignes et colonnes |
+| Calendrier | Afficher le calendrier des publications   |
+| Fichier    | Proposer un document en téléchargement    |
+
+Les options de mise en forme de chaque bloc (alignement, couleurs, taille, etc.) apparaissent dans l'onglet Bloc de la colonne latérale dès que le bloc est sélectionné.
+
+## Épingler un article
+
+Un article épinglé s'affiche toujours en tête de la liste des articles, quelle que soit sa date de publication. Cette option se trouve dans la colonne latérale, sous État et visibilité \> Épingler en haut du blog.
+
+## La titraille
+
+La titraille désigne la hiérarchie des titres qui structurent le contenu d'un article ou d'une page. Elle joue un rôle double : améliorer la lisibilité pour le visiteur, et faciliter l'indexation par les moteurs de recherche.
+
+Les moteurs de recherche comme Google lisent la titraille pour comprendre l'organisation et le sujet d'une page. Un contenu bien structuré avec des titres hiérarchisés est mieux compris, mieux indexé, et a plus de chances d'apparaître en bonne position dans les résultats. À l'inverse, une page sans titres intermédiaires, ou dont les niveaux sont utilisés dans le désordre, pénalise le référencement naturel.
+
+| H1      | Titre principal, attribué automatiquement au titre de l'article. Il ne doit apparaître qu'une seule fois par page. |
+| ------- | ------------------------------------------------------------------------------------------------------------------ |
+| H2      | Grandes sections du contenu. C'est le niveau le plus utilisé dans le corps d'un article.                           |
+| H3      | Sous-sections d'un H2. Permet d'affiner la structure sans créer une nouvelle section principale.                   |
+| H4 à H6 | Niveaux fins, rarement nécessaires en pratique.                                                                    |
+
+<Warning>
+   Ne pas choisir un niveau de titre pour son rendu visuel (taille, gras), mais pour sa position dans la hiérarchie du contenu. Un H3 ne doit jamais apparaître sans H2 au-dessus de lui.
+</Warning>
+
+## Modérer un commentaire
+
+La modération des commentaires s'effectue depuis Commentaires dans le back-office, ou directement depuis la colonne latérale de l'article concerné. Pour chaque commentaire, les actions disponibles sont : Approuver, Refuser, Signaler comme spam, Supprimer, et Répondre.
+
+### **Configurer les réglages des commentaires**
+
+Les options globales de commentaires se trouvent dans Réglages \> Commentaires. Les paramètres les plus utiles sont :
+
+- Autoriser les commentaires sur les nouveaux articles (activable/désactivable par défaut).
+- Approbation manuelle obligatoire : chaque commentaire doit être validé par un administrateur avant d'être publié - recommandé pour éviter le spam.
+- Notification par e-mail : recevoir un e-mail à chaque nouveau commentaire ou mise en attente.
+- Fermer les commentaires automatiquement après un certain nombre de jours.
+
+Ces réglages s'appliquent globalement à tout le site. Il est également possible de désactiver les commentaires article par article depuis la colonne latérale de l'éditeur, dans Discussion.
+
+CAPTURE D'ÉCRAN
+
+## Créer des liens internes et externes
+
+Pour insérer un lien dans un texte :
+
+1. Sélectionner le texte à transformer en lien.
+2. Cliquer sur l'icône ICONE Lien dans la barre d'outils du bloc, ou utiliser le raccourci Ctrl + K.
+3. Saisir l'URL de destination dans le champ qui apparaît.
+4. Valider avec Entrée.
+
+Pour un lien externe, activer l'option Ouvrir dans un nouvel onglet (icône visible dans le panneau du lien). Pour un lien interne, WordPress propose des suggestions automatiques dès la saisie des premiers caractères du titre d'une page ou d'un article du site.
+
+Pour supprimer un lien, sélectionner le texte concerné, cliquer sur l'icône ICONE puis sur Supprimer le lien.
+
+## Spectra
+
+Spectra est une extension qui ajoute des blocs supplémentaires à Gutenberg. Elle est installée et activée sur les postes d'examen. Ses blocs sont accessibles depuis le même menu + que les blocs natifs, dans une section dédiée.
+
+Les blocs Spectra attendus au référentiel sont :
+
+| **Slider (diaporama)**           | Afficher plusieurs images en défilement automatique      |
+| -------------------------------- | -------------------------------------------------------- |
+| **Form (formulaire)**            | Créer un formulaire de contact                           |
+| **FAQ**                          | Afficher des questions/réponses en accordéon             |
+| **Testimonials (témoignages)**   | Mettre en valeur des avis clients                        |
+| **Team (équipe)**                | Présenter des membres avec photo et titre                |
+| **Google Map**                   | Intégrer une carte interactive                           |
+| **Countdown (compte à rebours)** | Afficher un décompte jusqu'à une date                    |
+| **Pop-up Builder / Info Bar**    | Créer une fenêtre surgissante ou une barre d'information |
+
+[Aller à la catégorie Widgets](/les-widgets)
