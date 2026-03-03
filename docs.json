@@ -27,27 +27,20 @@
       {
         "tab": "Wordpress",
         "pages": [
-          "index"
+          "index",
+          "presentation-du-backoffice",
+          "apparence",
+          "le-menu",
+          "creer-un-article-page",
+          "le-referencement",
+          "les-widgets",
+          "astuces-pour-l-examen"
         ]
       },
       {
         "tab": "Prestashop",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "pages": [
+          "api-reference/introduction"
         ]
       }
     ]
