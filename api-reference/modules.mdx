@@ -1,0 +1,184 @@
+---
+title: "Modules"
+description: "Activer, désactiver et configurer les modules PrestaShop."
+---
+
+## Qu'est-ce qu'un module ?
+
+Les modules sont des **extensions** qui ajoutent ou enrichissent des fonctionnalités sur la boutique. PrestaShop en inclut un grand nombre nativement. Certains agissent sur le front-office (affichage, mise en page), d'autres sur le back-office (paiement, transport, marketing).
+
+Ils se gèrent dans \*\* Modules \> Gestionnaire de modules\*\*.
+
+---
+
+## Activer / Désactiver un module
+
+Depuis le gestionnaire de modules, recherchez le module par son nom. Chaque module dispose d'un menu d'actions :
+
+- **Installer** : installe le module pour la première fois
+- **Activer / Désactiver** : rend le module actif ou inactif sans le désinstaller
+- **Configurer** : accède aux réglages du module
+- **Désinstaller** : supprime le module et ses données
+
+<Warning>
+  Désactiver un module le rend inopérant sans perdre sa configuration. Désinstaller un module supprime définitivement ses données — à faire avec précaution.
+</Warning>
+
+📸 _[Capture recommandée : carte d'un module dans le gestionnaire avec le menu d'actions déroulé]_
+
+---
+
+## Les modules à connaître pour l'épreuve
+
+### Carrousel (Diaporama)
+
+Le module Carrousel affiche un **diaporama d'images défilantes** en haut de la page d'accueil. C'est souvent le premier élément visuel que voit le client.
+
+<u>Paramètres généraux</u>
+
+Dans la configuration du module, renseignez :
+
+- **Vitesse** : durée de transition entre deux slides (en millisecondes)
+- **Pause au survol** : stoppe le défilement quand le curseur est sur le carrousel
+- **Répéter les images** : relance le diaporama en boucle après la dernière slide
+
+<u>Gérer les slides</u>
+
+Chaque slide est configurable individuellement. Cliquez sur **Modifier** sur une slide existante ou sur **Ajouter** pour en créer une nouvelle :
+
+- **Image** : visuel de la slide (respectez les dimensions recommandées pour éviter la pixellisation)
+- **Titre** : texte principal affiché sur la slide
+- **Légende** : sous-titre ou texte d'accroche
+- **URL cible** : lien vers lequel le client est redirigé en cliquant sur la slide (ex. : lien vers une catégorie ou une page promo)
+- **Activé** : afficher ou masquer la slide sans la supprimer
+
+<Tip>
+  Il est recommandé de ne pas dépasser **5 à 7 slides** pour ne pas nuire à l'expérience utilisateur. Privilégiez des images légères pour ne pas ralentir le chargement de la page.
+</Tip>
+
+📸 _[Capture recommandée : liste des slides avec le formulaire de modification d'une slide ouverte]_
+
+---
+
+### Menu Principal
+
+Le module Menu Principal gère les **liens affichés dans la barre de navigation** en haut de la boutique. Il permet d'ajouter, supprimer et réorganiser les éléments du menu.
+
+<u>Ajouter un élément au menu</u>
+
+Dans la configuration du module, sélectionnez dans la liste déroulante le type d'élément à ajouter :
+
+- **Catégorie** : affiche une catégorie et ses sous-catégories en survol
+- **Page CMS** : lien vers une page de contenu (CGV, mentions légales...)
+- **Lien personnalisé** : URL libre avec un libellé au choix
+
+Cliquez sur **Ajouter**, puis **Enregistrer**.
+
+<u>Réorganiser le menu</u>
+
+Les éléments du menu se réorganisent par **glisser-déposer** dans la liste. L'ordre dans la liste correspond à l'ordre d'affichage dans le menu de la boutique.
+
+Pour **supprimer** un élément, sélectionnez-le dans la liste des éléments du menu et cliquez sur **Supprimer**.
+
+📸 _[Capture recommandée : interface de configuration du menu principal avec la liste des éléments et la liste déroulante d'ajout]_
+
+---
+
+### Bloc Texte
+
+Le module Bloc Texte permet d'afficher un **bloc de contenu libre** (texte, HTML, image) dans une zone de la boutique, typiquement en pied de page ou en colonne latérale.
+
+<u>Configuration</u>
+
+Dans la configuration du module, renseignez :
+
+- **Titre du bloc** : affiché en en-tête du bloc sur la boutique
+- **Contenu** : éditeur de texte enrichi (WYSIWYG) permettant de saisir du texte formaté, des liens, des images ou du HTML personnalisé
+
+Ce module est utile pour afficher des informations comme une accroche commerciale, une adresse, des horaires d'ouverture ou un message promotionnel.
+
+📸 _[Capture recommandée : éditeur de contenu du module Bloc Texte]_
+
+---
+
+### Réassurance
+
+Le module Réassurance affiche des **blocs d'engagements** sous forme d'icône + texte sur les fiches produits et/ou en pied de page (ex. : "Livraison offerte dès 50€", "Retours gratuits sous 30 jours", "Paiement sécurisé").
+
+Son objectif est de **rassurer le client** au moment où il hésite à acheter.
+
+<u>Configuration d'un bloc de réassurance</u>
+
+Le module propose plusieurs blocs préconfigurés (politique de sécurité, politique de livraison, politique de retour). Pour chaque bloc, cliquez sur le menu **"..."** puis **Modifier** :
+
+- **Icône** : choisissez parmi les icônes disponibles ou importez la vôtre
+- **Titre** : engagement affiché en gras (ex. : `Livraison offerte dès 50€`)
+- **Description** : précision ou condition (ex. : `Pour toute commande en France métropolitaine`)
+- **Lien** : URL vers une page de détail si le client veut en savoir plus (ex. : page CGV ou page "Livraison")
+- **Activé** : afficher ou masquer ce bloc sans le supprimer
+
+📸 _[Capture recommandée : formulaire de modification d'un bloc de réassurance avec les champs icône, titre et description]_
+
+---
+
+### Produits phares
+
+Le module Produits phares affiche une **sélection de produits mis en avant** sur la page d'accueil de la boutique.
+
+<u>Configuration</u>
+
+Dans la configuration du module, définissez :
+
+- **Nombre de produits à afficher** : combien de produits apparaissent sur la page d'accueil
+
+📸 _[Capture recommandée : configuration du module avec le champ "Nombre de produits"]_
+
+<u>Sélectionner les produits à mettre en avant</u>
+
+La sélection ne se fait pas de manière "naturelle" : elle se fait en plusieurs temps.
+Si vous voulez choisir vos produits phares, vous devez faire attention à ce qu'ils appartiennent à la catégorie "**Accueil**". 
+
+<Note>
+  Si plus de produits sont marqués "phare" que le nombre défini dans le module, PrestaShop affiche en priorité les produits les plus récemment modifiés.
+</Note>
+
+Vous pouvez dans la page "Produits" les réorganiser pour donner la priorité à certains par rapport à d'autres. 
+
+📸 _[Capture recommandée : réorganiser]_
+
+
+---
+
+## Bouton de partage réseaux sociaux
+
+Ce module ajoute des **boutons de partage** sur les fiches produits, permettant aux clients de partager un produit sur leurs réseaux sociaux.
+
+<u>Configuration</u>
+
+Dans la configuration du module, choisissez les **réseaux à afficher** parmi : Facebook, X (Twitter), Pinterest, et d'autres selon la version installée.
+
+Activez ou désactivez chaque réseau individuellement selon la stratégie de communication de la boutique.
+
+📸 _[Capture recommandée : page de configuration du module avec les réseaux cochés/décochés]_
+
+---
+
+## Commentaires Produits
+
+Ce module permet aux clients de **laisser un avis et une note** (sur 5 étoiles) sur les fiches produits. Les avis peuvent être modérés avant publication.
+
+<u>Configuration</u>
+
+- **Activer les commentaires** : affiche ou masque le bloc d'avis sur les fiches produits
+- **Modération** : si activée, chaque avis doit être **approuvé manuellement** avant d'être visible sur la boutique
+- **Critères de notation** : possibilité d'ajouter des critères spécifiques en plus de la note globale (ex. : Rapport qualité/prix, Design, Livraison)
+
+<u>Modérer les avis</u>
+
+Les avis reçus se consultent et se modèrent dans **Catalogue \> Commentaires produits** :
+
+- Passez un avis en **Validé** pour le rendre visible
+- **Supprimez** les avis inappropriés
+- Répondez à un avis depuis sa fiche
+
+📸 _[Capture recommandée : liste des commentaires en attente de modération dans Catalogue \> Commentaires produits]_

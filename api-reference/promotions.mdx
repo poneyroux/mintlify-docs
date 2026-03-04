@@ -1,0 +1,104 @@
+---
+title: "Promotions"
+description: "Créer et gérer les promotions et réductions sur PrestaShop."
+---
+
+## Les deux types de promotions
+
+PrestaShop propose deux approches distinctes pour créer des réductions. Il est essentiel de ne pas les confondre :
+
+|                         | Règles de panier                                  | Règles de prix catalogue                       |
+| ----------------------- | ------------------------------------------------- | ---------------------------------------------- |
+| **Où ça s'applique**    | Sur le panier du client au moment du paiement     | Directement sur le prix affiché du produit     |
+| **Déclenchement**       | Par un code promo, automatiquement ou via un bon  | Automatiquement, sans action du client         |
+| **Affiché comment**     | Remise visible dans le récapitulatif du panier    | Prix barré sur la fiche produit                |
+| **Ciblage**             | Par client, groupe, transporteur, produit...      | Par produit, catégorie, marque, fournisseur... |
+| **Cas d'usage typique** | Code promo `-10%`, livraison offerte, bon d'achat | Soldes, promotion sur une catégorie entière    |
+
+<Note>
+  Les **prix spécifiques** sont une troisième option plus simple : ils permettent d'appliquer une remise fixe ou en % directement sur la fiche d'un produit, pour tous les clients ou un groupe ciblé.
+</Note>
+
+---
+
+## Règles de prix catalogue
+
+Les règles de prix catalogue s'appliquent **automatiquement** sur les prix affichés, sans que le client n'ait à saisir un code. Elles se gèrent dans  **Catalogue \> Réductions \> Règle de prix catalogue**
+
+Cliquez sur **Ajouter une règle de prix catalogue** et renseignez :
+
+### Informations générales
+
+- **Nom** : libellé interne de la promotion (ex. : `Soldes été 2026`)
+- **Devise / Pays / Groupe de clients** : pour cibler une audience spécifique (laissez sur "Tous" pour une promotion générale)
+- **Date de début / Date de fin** : période d'application de la promotion
+- **Réduction** : montant fixe ou pourcentage, applicable HT ou TTC, avec ou sans les autres remises déjà en place
+
+### Conditions
+
+Cliquez sur le bouton AJOUTER UN NOUVEAU GROUPE DE CONDITION, puis sélectionnez votre condition. N'oubliez pas d'appuyer sur "Ajouter la condition" à droite du menu déroulant.
+
+Définissez les produits concernés par la règle en ajoutant des **filtres** : catégorie, marque, fournisseur, attribut ou produit spécifique.
+
+<Tip>
+  Une règle sans condition s'applique à **tout le catalogue**. Ajoutez toujours au moins un filtre pour éviter les remises involontaires.
+</Tip>
+
+📸 _[Capture recommandée : formulaire de création d'une règle de prix catalogue, onglet Conditions avec un filtre catégorie]_
+
+---
+
+## Règles de panier (codes promo)
+
+Les règles de panier s'appliquent **au moment du paiement**, soit automatiquement, soit via un code promo saisi par le client. Elles se gèrent dans **Vendre \> Catalogue \> Règles de panier**.
+
+Cliquez sur **Ajouter une règle de panier** et renseignez :
+
+### Informations
+
+- **Nom** : libellé interne (ex. : `Promo newsletter mai`)
+- **Code** : le code promo saisi par le client (ex. : `BIENVENUE10`). Si ce champ est **vide**, la règle s'applique automatiquement sans code
+- **Mise en avant** : affiche la promotion dans le panier même sans code
+- **Utilisation partielle** : permet d'utiliser un bon en plusieurs fois
+- **Priorité** : ordre d'application si plusieurs règles sont actives simultanément
+
+### Conditions 
+
+- **Limiter à un seul client** : cibler un groupe spécifique
+- **Validité** : de quand à quand. 
+- **Montant minimum** : montant de commande requis pour déclencher la remise
+- **Quantité disponible**
+- **Restrictions** : sélection géographique, de transporteurs, de groupes de clients ou de produits.
+
+  <Warning>
+    Attention, dans le calendrier, à ne pas écrire la date à la main : choisissez directement dans le calendrier.
+  </Warning>
+
+### Actions
+
+C'est ici que vous définissez la remise elle-même :
+
+- **Livraison gratuite** : offrir les frais de port
+- **Appliquer une réduction** : en pourcentage ou en montant.
+- **Envoyer un cadeau** : ajouter un produit gratuit dans le panier
+
+📸 _[Capture recommandée : onglet Actions d'une règle de panier avec les options de remise]_
+
+---
+
+## Prix spécifiques
+
+Les prix spécifiques permettent d'appliquer une remise **directement sur un produit**, sans passer par les règles catalogue ou panier. C'est l'option la plus rapide pour une remise ponctuelle sur un produit précis.
+
+Ils se configurent depuis la **fiche produit**, onglet **Prix**, section **Prix spécifiques**. Cliquez sur **Ajouter un prix spécifique** et renseignez :
+
+- **Pour** : appliquer à tous les clients, un groupe, un client spécifique ou un pays
+- **À partir de** : quantité minimale pour déclencher la remise (utile pour les remises volume)
+- **Prix** : nouveau prix fixe, ou cochez **Laisser le prix de base** pour travailler en remise
+- **Remise** : montant fixe ou pourcentage à soustraire du prix de base
+
+<Tip>
+  Les prix spécifiques sont idéaux pour les **remises dégressives** : créez plusieurs entrées avec des quantités minimales différentes (ex. : -5% dès 3 unités, -10% dès 10 unités).
+</Tip>
+
+📸 _[Capture recommandée : formulaire "Ajouter un prix spécifique" dans l'onglet Prix d'un produit]_

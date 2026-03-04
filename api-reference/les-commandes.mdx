@@ -1,0 +1,141 @@
+---
+title: Commandes & SAV
+description: Créer et gérer les commandes, retours et avoirs sur PrestaShop.
+---
+
+## Gérer les commandes
+
+Les commandes se gèrent dans  **Commandes > Commandes**.
+Cette section liste toutes les commandes passées sur la boutique, 
+avec leur statut, le client associé et le montant total.
+
+---
+
+## Créer une commande
+
+Il est possible de créer une commande manuellement depuis le back-office,
+par exemple pour un client qui commande par téléphone ou par email.
+
+Cliquez sur **Ajouter une commande**, puis :
+
+1. **Recherchez le client** par nom ou email — ou créez-en un nouveau à la volée
+2. **Ajoutez des produits** via la barre de recherche dans le panier
+3. **Sélectionnez une adresse** de livraison et de facturation
+4. **Choisissez un transporteur** parmi ceux configurés
+5. **Sélectionnez un mode de paiement**
+6. Validez avec **Créer la commande**
+
+📸 *[Capture recommandée : formulaire de création manuelle d'une commande avec le panier et la recherche client]*
+
+---
+
+## Traiter une commande
+
+Cliquez sur une commande pour accéder à sa fiche détaillée. Vous pouvez y :
+
+- **Modifier le statut** de la commande (ex. : En attente de paiement, Expédié, Livré, Annulé)
+- **Ajouter un message interne** visible uniquement par l'équipe
+- **Envoyer un message au client** directement depuis la fiche
+- **Modifier la quantité ou le prix** d'un produit de la commande
+- **Ajouter un produit** à la commande existante
+- **Générer un bon de réduction** pour ce client
+
+<Note>
+  Chaque changement de statut déclenche un **email automatique** envoyé au client. 
+  Vérifiez les modèles d'emails dans **Configurer > Paramètres avancés > Emails**.
+</Note>
+
+📸 *[Capture recommandée : fiche commande avec le sélecteur de statut et la section messages]*
+
+---
+
+## Gérer les retours produits
+
+### Activer les retours
+
+Avant de pouvoir traiter des retours, la fonctionnalité doit être activée dans 
+**SAV > Retours produits**.
+
+Vous pouvez y configurer :
+- **Activer ou désactiver** les retours clients
+- **Délai de retour** : nombre de jours après la livraison pendant lequel le retour est accepté
+- **Conditions de retour** : texte libre affiché au client (politique de retour)
+
+📸 *[Capture recommandée : page de configuration des retours avec le champ délai et conditions]*
+
+### Traiter un retour
+
+Lorsqu'un client demande un retour depuis son espace, celui-ci apparaît dans 
+**Vendre > Service clients > Retours produits**.
+
+Cliquez sur le retour pour le traiter : vous pouvez **accepter ou refuser** la demande 
+et faire évoluer son statut (En attente, En attente du colis, Colis reçu...).
+
+---
+
+## Créer un avoir (remboursement)
+
+Un avoir peut être émis depuis la **fiche de la commande concernée**, 
+dans la section **Retours produits** en bas de page.
+
+### Remboursement partiel
+
+Cliquez sur **Remboursement partiel**. Saisissez pour chaque produit 
+la quantité à rembourser et le montant. Vous pouvez également rembourser 
+les frais de port en partie.
+
+Choisissez ensuite le mode de restitution :
+- **Générer un bon de réduction** : le montant est crédité sous forme de bon utilisable sur la boutique
+- **Rembourser** : remboursement direct (nécessite un traitement manuel selon le moyen de paiement)
+- **Remettre en stock** : les produits retournés sont réintégrés dans les stocks
+
+### Remboursement total
+
+Cliquez sur **Rembourser les produits**. Cochez tous les produits de la commande 
+et suivez la même logique que pour le remboursement partiel.
+
+<Warning>
+  Un avoir généré dans PrestaShop est un document comptable. 
+  Il est accessible par le client depuis son espace personnel, 
+  dans la section **Avoirs**.
+</Warning>
+
+📸 *[Capture recommandée : section "Remboursement partiel" dans la fiche commande avec les champs quantité et montant]*
+
+---
+## Messages prédéfinis
+
+Les messages prédéfinis permettent de répondre rapidement aux clients 
+sans ressaisir à chaque fois les mêmes formulations (ex. : confirmation d'expédition,  demande de complément d'information, excuse pour un retard).
+
+Ils se créent dans **SAV > Messages prédéfinis**.
+
+Cliquez sur **Ajouter un message**, renseignez :
+- **Nom** : le nom interne du message (ex. : `Colis expédié`, `Retard de livraison`)
+- **Message** : le texte envoyé au client
+
+Une fois créés, ces messages sont disponibles directement depuis la **fiche commande** : dans la section **Nouveau message**, sélectionnez un message prédéfini dans la liste déroulante, personnalisez-le si besoin, puis envoyez-le au client.
+
+📸 *[Capture recommandée : liste déroulante des messages prédéfinis dans une fiche commande]*
+
+---
+## Traiter un message client
+
+La liste affiche tous les messages reçus avec leur statut (Ouvert, En attente, Fermé), 
+le client concerné et la commande associée le cas échéant.
+
+Cliquez sur un message pour accéder au fil de conversation. Vous pouvez :
+
+- **Lire l'historique** complet des échanges avec le client
+- **Répondre** directement via le champ de réponse
+- **Utiliser un message prédéfini** via la liste déroulante (voir page Commandes)
+- **Changer le statut** du ticket (Ouvert, En attente, Fermé)
+- **Transférer** le message à un autre employé via le champ **Transférer à**
+- **Associer le message à une commande** si ce n'est pas fait automatiquement
+
+<Tip>
+  Pensez à **fermer les tickets** traités. Cela permet de garder 
+  une liste claire des demandes encore en cours.
+</Tip>
+
+📸 *[Capture recommandée : fiche d'un message client avec le fil de conversation et le champ de réponse]*

@@ -1,0 +1,71 @@
+---
+title: "Clients"
+---
+
+---
+
+## title: Clients description: Créer et gérer les clients et groupes de clients de la boutique.
+
+## Gérer les clients
+
+La gestion des clients se fait dans **Vendre \> Clients \> Clients**. Cette section liste tous les comptes clients enregistrés sur la boutique, qu'ils aient passé commande ou non.
+
+---
+
+## Créer un client
+
+Cliquez sur **Ajouter un client**. Renseignez les champs suivants :
+
+- **Civilité** : M. ou Mme (détermine le titre d'adresse dans les emails automatiques)
+- **Prénom / Nom**
+- **Adresse e-mail** : identifiant de connexion du client
+- **Mot de passe** : défini à la création, le client pourra le modifier depuis son espace
+- **Date de naissance** : optionnelle
+- **Activé** : si désactivé, le client ne peut plus se connecter à son espace
+- **Partenaire** : indique si le client accepte de recevoir les offres commerciales
+- **Groupe par défaut** : le groupe tarifaire auquel le client appartient (voir section suivante)
+
+<Note>
+  En conditions réelles, les clients créent eux-mêmes leur compte depuis le front-office. La création manuelle depuis le back-office est utile pour des comptes professionnels ou des tests.
+</Note>
+
+📸 _[Capture recommandée : formulaire de création d'un client avec les champs principaux]_
+
+---
+
+## Modifier et consulter un client
+
+Depuis la liste des clients, cliquez sur **Modifier** pour éditer les informations d'un client, ou sur son nom pour accéder à sa **fiche détaillée**.
+
+La fiche client affiche un résumé complet :
+
+- Ses commandes passées et leur statut
+- Ses messages envoyés au SAV
+- Ses adresses enregistrées
+- Ses paniers abandonnés
+- Les bons de réduction qui lui ont été attribués
+
+📸 _[Capture recommandée : fiche détaillée d'un client avec les sections commandes et messages]_
+
+---
+
+## Créer et gérer un groupe de clients
+
+Les groupes de clients permettent d'appliquer des **conditions tarifaires spécifiques** à certains clients (ex. : tarif professionnel, clients VIP, revendeurs).
+
+Ils se gèrent dans **Vendre \> Clients \> Groupes**.
+
+Cliquez sur **Ajouter un groupe**. Renseignez :
+
+- **Nom** : le nom du groupe (ex. : `Revendeurs`, `VIP`)
+- **Remise** : pourcentage de réduction automatiquement appliqué à tous les produits pour ce groupe
+- **Affichage des prix** : choisissez si les membres voient les prix **HT ou TTC** (utile pour les groupes professionnels)
+- **Afficher les prix** : si désactivé, les prix sont masqués pour ce groupe (ex. : boutique réservée aux professionnels connectés)
+
+<Tip>
+  Les trois groupes par défaut de PrestaShop sont **Visiteur**, **Invité** et **Client**. Il est déconseillé de les supprimer — créez de nouveaux groupes personnalisés à la place.
+</Tip>
+
+Une fois le groupe créé, affectez-y des clients depuis leur fiche individuelle en modifiant le champ **Groupe par défaut** ou en cochant les groupes supplémentaires.
+
+📸 _[Capture recommandée : formulaire de création d'un groupe avec les champs remise et affichage des prix]_

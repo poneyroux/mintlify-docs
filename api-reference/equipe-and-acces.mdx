@@ -1,0 +1,60 @@
+---
+title: "Équipe & Accès"
+description: "Gérer les collaborateurs et leurs permissions dans PrestaShop."
+---
+
+## Employés et profils
+
+PrestaShop permet de créer plusieurs comptes d'accès au back-office pour les membres de l'équipe, avec des **niveaux de permissions différents** selon leur rôle. La gestion se fait dans **Paramètres avancés \> Équipe**.
+
+---
+
+## Créer un collaborateur
+
+Dans l'onglet **Employés**, cliquez sur **Ajouter un employé** et renseignez :
+
+- **Prénom / Nom**
+- **Adresse e-mail** : identifiant de connexion au back-office
+- **Mot de passe**
+- **Page par défaut** : la page sur laquelle l'employé arrive après connexion
+- **Rôle** : définit les droits d'accès de l'employé (voir section suivante)
+- **Actif** : si désactivé, l'employé ne peut plus se connecter
+
+📸 _[Capture recommandée : formulaire de création d'un employé avec le champ Profil]_
+
+---
+
+## Les profils
+
+Un profil est un **ensemble de permissions** regroupées sous un nom. PrestaShop inclut quatre profils par défaut :
+
+| Profil          | Accès                                               |
+| --------------- | --------------------------------------------------- |
+| **SuperAdmin**  | Accès total à toutes les fonctionnalités            |
+| **Logisticien** | Accès limité aux commandes, stocks et transporteurs |
+| **Traducteur**  | Accès limité aux contenus à traduire                |
+| **Commercial**  | Accès limité aux clients, commandes et statistiques |
+
+---
+
+## Gérer les permissions
+
+Les permissions du profil se définissent ensuite dans l'onglet **Permissions** : sélectionnez le profil dans la liste déroulante, puis cochez pour chaque section du back-office les droits autorisés :
+
+- **Voir** : consulter la section
+- **Ajouter** : créer des éléments
+- **Modifier** : éditer des éléments existants
+- **Supprimer** : effacer des éléments
+- **Tout cocher** : accès complet à la section
+
+📸 _[Capture recommandée : page Permissions avec la grille des droits par section]_
+
+---
+
+## Affecter un profil à un employé
+
+Le profil s'affecte directement depuis la **fiche de l'employé**, champ **Profil**. Pour modifier le profil d'un employé existant, cliquez sur **Modifier** dans la liste des employés et changez le champ profil.
+
+<Warning>
+  Un employé avec le profil **SuperAdmin** a accès à tout, y compris la gestion des autres employés et des paramètres critiques de la boutique. Limitez ce profil aux personnes de confiance.
+</Warning>

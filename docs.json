@@ -27,7 +27,12 @@
         "tab": "Prestashop",
         "pages": [
           "api-reference/introduction",
-          "api-reference/creer-un-produit"
+          "api-reference/creer-un-produit",
+          "api-reference/untitled-page",
+          "api-reference/les-commandes",
+          "api-reference/promotions",
+          "api-reference/modules",
+          "api-reference/equipe-and-acces"
         ]
       }
     ]
