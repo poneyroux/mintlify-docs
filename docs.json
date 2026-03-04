@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "willow",
+  "name": "Wordprestashop",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#82CB15",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#82CB15"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -65,6 +65,13 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "fonts": {
+    "family": "Inter",
+    "heading": {
+      "family": "Lato",
+      "weight": 800
     }
   }
 }
