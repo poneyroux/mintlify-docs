@@ -1,33 +1,54 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: Introduction à PrestaShop
+description: Découvrez PrestaShop et apprenez à naviguer dans le back-office.
 ---
 
+## Qu'est-ce que PrestaShop ?
+
+PrestaShop est un **CMS e-commerce open source** qui permet de créer et gérer une boutique en ligne complète.
+Concrètement, il fournit tous les outils pour gérer un catalogue de produits, traiter des commandes, 
+suivre ses clients et piloter son activité commerciale — sans avoir à coder.
+
+Lancé en 2007 en France, PrestaShop est aujourd'hui l'une des solutions e-commerce les plus utilisées 
+en Europe, notamment par les PME. Il est gratuit et personnalisable grâce à des modules et des thèmes.
+
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  Dans le cadre de l'épreuve E5B BTS NDRC session 2026, la version utilisée est **PrestaShop 9.0.0.1** 
+  avec le **thème Classic**.
 </Note>
 
-## Welcome
+## Naviguer dans le back-office
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Le back-office est l'interface d'administration de la boutique — c'est là que se passe toute la gestion.
+Le front-office, lui, est la boutique telle que la voient les clients.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+📸 *[Capture recommandée : vue d'ensemble du back-office avec le menu latéral gauche visible]*
 
-## Authentication
+Pour accéder au back-office, on se connecte via l'URL `/adminxx` de la boutique. 
+Une fois connecté, on arrive sur le **tableau de bord** (*Dashboard*), qui affiche un résumé 
+des statistiques en temps réel.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+### Le menu latéral
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+La navigation principale se fait via le **menu vertical à gauche**, organisé en grandes sections :
+
+| Section | Contenu principal |
+|---|---|
+| **Vendre** | Commandes, Catalogue, Clients, SAV, Statistiques |
+| **Améliorer** | Modules, Apparence |
+| **Configurer** | Paramètres avancés, Administration |
+
+📸 *[Capture recommandée : zoom sur le menu latéral gauche avec les sections dépliées]*
+
+<Tip>
+  Le menu peut être réduit en cliquant sur `<<` en haut du panneau pour n'afficher que les icônes 
+  et gagner de l'espace à l'écran.
+</Tip>
+
+### Passer du back-office au front-office
+
+Pour visualiser la boutique en tant que client sans se déconnecter, cliquez sur l'icône 
+**« Voir ma boutique »** (icône maison) en haut à droite du back-office. 
+Cela ouvre le front-office dans un nouvel onglet.
+
+📸 *[Capture recommandée : barre supérieure du back-office avec le bouton "Voir ma boutique" mis en évidence]*

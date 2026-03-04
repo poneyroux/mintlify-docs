@@ -26,7 +26,8 @@
       {
         "tab": "Prestashop",
         "pages": [
-          "api-reference/introduction"
+          "api-reference/introduction",
+          "api-reference/creer-un-produit"
         ]
       }
     ]

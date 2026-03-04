@@ -1,0 +1,289 @@
+---
+title: "Les produits"
+description: "Créer et gérer le catalogue produits de la boutique PrestaShop."
+---
+
+## Créer et gérer un produit
+
+Pour créer un produit, allez dans **Catalogue \> Produits** puis cliquez sur **Ajouter un Nouveau produit**.
+
+📸 _[Capture recommandée : bouton "Nouveau produit" en haut à droite de la liste des produits]_
+
+Vous aurez alors le choix entre 4 options :
+
+- **Produit standard**
+- **Produit avec déclinaisons**
+- **Pack de produits**
+- **Produit dématérialisé**
+
+Le plus probable est que vous ayiez à choisir le produit avec déclinaison.
+
+Le formulaire de création est organisé en onglets. Les principaux sont :
+
+- **Description** : nom, résumé, description, catégorie par défaut, marque
+- **Détails** : références, caractéristiques
+- **Déclinaisons** : gestion des attributs
+- **Livraison** : dimensions, délai, frais de livraison et choix de transporteurs
+- **Prix** : gestion des prix HT et TTC
+- **Référencement - SEO** : balise titre, méta-description, URL, mots clés
+- **Options** : Visibilité
+
+Une fois le produit rempli, cliquez sur **Enregistrer** et activez le bouton **En ligne** pour le rendre visible sur la boutique.
+
+<Warning>
+  Un produit **hors ligne** n'est pas visible par les clients, même s'il est enregistré.
+</Warning>
+
+📸 _[Capture recommandée : vue du formulaire produit avec les onglets visibles et le bouton "En ligne"]_
+
+---
+
+## Gérer les images
+
+Dans l'onglet **Images** du produit, vous pouvez :
+
+- Ajouter plusieurs images par glisser-déposer
+- Définir l'**image de couverture** (celle affichée en priorité) en cliquant sur l'étoile
+- Renseigner pour chaque image une **légende** (utiles pour l'accessibilité et le SEO)
+
+📸 _[Capture recommandée : onglet Images avec l'étoile de couverture mise en évidence]_
+
+---
+
+## Attributs et caractéristiques
+
+Avant de créer des déclinaisons, il faut comprendre la différence entre les deux notions :
+
+|                        | Attribut                                     | Caractéristique                                          |
+| ---------------------- | -------------------------------------------- | -------------------------------------------------------- |
+| **Rôle**               | Crée des variantes du produit (déclinaisons) | Affiche des informations techniques sur la fiche produit |
+| **Exemple**            | Taille S / M / L, Couleur Rouge / Bleu       | Matière : Coton, Poids : 500g                            |
+| **Impact sur le prix** | Oui (possible)                               | Non                                                      |
+| **Visible**            | Sous forme de boutons/listes de sélection    | Dans le tableau "Caractéristiques" de la fiche produit   |
+
+---
+
+### Créer un attribut
+
+Les attributs se gèrent dans **Catalogue \> Attributs et caractéristiques**, onglet **Attributs**.
+
+Cliquez sur **Ajouter un nouvel attribut**. Le formulaire contient trois champs :
+
+- **Nom** : le nom interne utilisé dans le back-office (ex. : `Couleur`). C'est l'identifiant de l'attribut, visible uniquement par vous.
+- **Nom public** : le nom affiché aux clients sur la fiche produit (ex. : `Choisissez votre couleur`). Il peut être différent du nom interne pour être plus commercial.
+- **Type d'attribut** : définit comment les valeurs seront affichées sur la boutique :
+  - **Liste déroulante** : les valeurs s'affichent dans un menu déroulant
+  - **Boutons radio** : les valeurs s'affichent sous forme de boutons cliquables
+  - **Sélecteur de couleur** : affiche des pastilles de couleur (idéal pour un attribut Couleur)
+  - **Texture/motif** : affiche des vignettes d'image
+
+Enregistrez. L'attribut apparaît maintenant dans la liste.
+
+📸 _[Capture recommandée : formulaire de création d'un attribut avec les trois champs et le menu déroulant "Type d'attribut"]_
+
+#### Ajouter des valeurs à un attribut
+
+Une fois l'attribut créé, cliquez sur **Ajouter des valeurs** (ou sur le nombre de valeurs dans la liste).
+
+Pour chaque valeur, renseignez :
+
+- **Attribut** : sélectionnez le groupe auquel appartient cette valeur (ex. : Taille)
+- **Valeur** : la valeur elle-même (ex. : `S`, `M`, `L`, `XL`)
+- **Position** : l'ordre d'affichage sur la fiche produit
+
+Répétez l'opération pour chaque valeur souhaitée.
+
+<Tip>
+  Pour un attribut de type Couleur, un champ supplémentaire apparaît pour renseigner le code couleur HEX (ex. : `#FF0000` pour le rouge) ou uploader une image de texture.
+</Tip>
+
+📸 _[Capture recommandée : liste des valeurs d'un attribut Taille avec S, M, L, XL]_
+
+---
+
+### Créer une caractéristique
+
+Les caractéristiques se gèrent dans **Catalogue \> Attributs et caractéristiques**, onglet **Caractéristiques**.
+
+Cliquez sur **Ajouter une nouvelle caractéristique**. Le formulaire contient deux champs :
+
+- **Nom** : le nom interne (ex. : `Matière`)
+- **Nom public** : le nom affiché sur la fiche produit côté client (ex. : `Composition`)
+
+Enregistrez, puis cliquez sur **Ajouter des valeurs** pour créer les valeurs associées :
+
+- **Caractéristique** : sélectionnez la caractéristique parente
+- **Valeur** : saisissez la valeur (ex. : `100% Coton`, `Polyester`, `Cuir`)
+
+<Note>
+  Contrairement aux attributs, les caractéristiques ne génèrent pas de déclinaisons. Elles s'ajoutent directement sur la fiche produit, dans l'onglet **Essentiel**, section **Caractéristiques**.
+</Note>
+
+📸 _[Capture recommandée : onglet Caractéristiques de la fiche produit avec une caractéristique "Matière" remplie]_
+
+---
+
+## Créer des déclinaisons
+
+Une fois vos attributs et leurs valeurs créés, vous pouvez générer les déclinaisons du produit.
+
+### Générer les déclinaisons
+
+Dans l'onglet **Déclinaisons**, vous disposez d'un **générateur de déclinaisons** :
+
+1. Sélectionnez un attribut (ex. : Taille) dans la liste
+2. Cochez les valeurs à inclure (ex. : S, M, L)
+3. Répétez pour chaque attribut supplémentaire (ex. : Couleur \> Rouge, Bleu)
+4. Cliquez sur **Générer** : PrestaShop crée automatiquement toutes les combinaisons possibles
+
+📸 _[Capture recommandée : générateur de déclinaisons avec deux attributs cochés et le bouton "Générer"]_
+
+### Paramétrer chaque déclinaison
+
+Une fois générées, les déclinaisons apparaissent dans un tableau. Pour chacune, vous pouvez renseigner :
+
+- **Impact sur le prix** : montant ajouté ou soustrait au prix de base (HT ou TTC)
+- **Référence** : code article propre à cette déclinaison
+- **Quantité en stock** : stock disponible pour cette variante
+- **Image associée** : photo spécifique à cette déclinaison (cliquez pour cela sur le crayon de la colonne Actions et scrollez tout en bas)
+- **Déclinaison par défaut** : la variante présélectionnée à l'ouverture de la fiche produit
+
+<Tip>
+  Définissez toujours une déclinaison par défaut. C'est celle qui s'affichera en premier aux clients sur la boutique.
+</Tip>
+
+📸 _[Capture recommandée : tableau des déclinaisons générées avec les colonnes impact prix, référence, stock]_
+
+---
+
+## Personnalisation du produit par le client
+
+Certains produits peuvent être personnalisés par le client (ex. : texte gravé, photo à imprimer). Cette option se configure dans l'onglet **Détails** du produit, section **Personnalisation**.
+
+Il suffit de définir :
+
+- Le **type de champ** : texte ou fichier (image)
+- Si le champ est **obligatoire** ou facultatif
+
+📸 _[Capture recommandée : section Personnalisation dans l'onglet Options]_
+
+---
+
+## Créer un pack de produits
+
+Un pack regroupe plusieurs produits existants vendus ensemble sous une seule référence, à un prix unique (ex. : "Kit démarrage" = produit A + produit B + produit C).
+
+### Créer le pack
+
+Lors de la création du produit, sélectionnez **Pack de produits**. Un onglet **Pack** apparaît dans le menu horizontal.
+
+Dans cet onglet, recherchez et ajoutez les produits à inclure via la barre de recherche, en précisant la quantité de chaque article dans le pack.
+
+### Remplir la fiche comme un produit classique
+
+Un pack se complète exactement comme un produit standard :
+- Renseignez le **nom**, la **description** et les **images** du pack dans l'onglet **Description**
+- Définissez le **prix du pack** dans l'onglet **Prix** — ce prix est indépendant des prix individuels des produits qui le composent
+- Gérez le **stock du pack** dans l'onglet **Pack**
+
+
+📸 *[Capture recommandée : onglet Pack avec la barre de recherche et la liste des produits ajoutés]*
+
+---
+
+## Associer deux produits
+
+L'association de produits permet d'afficher des **produits complémentaires** 
+en bas de la fiche produit, dans une section du type "Vous aimerez aussi" ou "Produits associés".
+
+C'est un outil de **cross-selling** : on suggère au client un produit en lien avec celui qu'il consulte
+(ex. : associer une housse de protection à un téléphone, ou des lacets à une paire de chaussures).
+
+### Comment faire
+
+Dans l'onglet **Description** du produit, section **Produits associés**, 
+utilisez la barre de recherche pour trouver et ajouter le ou les produits à associer.
+
+<Note>
+  L'association est **unilatérale** : si vous associez le produit A au produit B, le produit B n'affichera pas automatiquement le produit A dans ses associations. 
+  Il faut le faire manuellement dans les deux sens si nécessaire.
+</Note>
+
+📸 *[Capture recommandée : section "Produits associés" dans l'onglet Options avec un produit ajouté]*
+
+---
+
+## Créer une marque
+
+Les marques permettent d'associer vos produits à leurs fabricants et d'afficher 
+une **page marque** sur la boutique (logo, description, liste des produits de la marque).
+
+Elles se gèrent dans **Catalogue > Marques et fournisseurs**, onglet **Marques**.
+
+Cliquez sur **Ajouter une marque** et renseignez :
+- **Nom** : le nom de la marque (ex. : Nike, Samsung)
+- **Description courte et description longue** : présentent la marque sur sa page publique
+- **Logo** : image de la marque affichée sur la boutique
+- **Méta-titre, méta-description, mots-clés** : pour le référencement de la page marque
+
+
+Une fois la marque créée, associez-la à un produit via l'onglet **Description** du produit, 
+champ **Marque**.
+
+📸 *[Capture recommandée : formulaire de création d'une marque avec les champs nom et logo]*
+
+---
+
+## Gérer les stocks
+
+Le stock se gère directement dans l'onglet **Quantités** du produit.
+
+Vous pouvez :
+
+- Définir la **quantité disponible**
+- Choisir le comportement **quand le stock est épuisé** (bloquer la commande ou l'autoriser)
+- Définir une **quantité minimale** d'achat
+
+<Note>
+  Pour gérer les stocks de manière globale sur toute la boutique, rendez-vous dans **Stock \> Gestion des stocks**.
+</Note>
+
+---
+
+## Créer et gérer un transporteur
+
+Les transporteurs se configurent dans **Livraison \> Transporteurs**.
+
+Cliquez sur **Ajouter un transporteur** et renseignez :
+
+1. Le nom et le logo du transporteur
+2. Les délais de livraison et la vitesse (0 étant les délais les plus longs, 9 les plus courts)
+3. Quels groupes d'utilisateurs y ont accès
+4. Les dimensions et les poids maximum. Si vous laissez 0, il n'y aura pas de limites
+5. Les zones géographiques desservies
+
+📸 _[Capture recommandée : formulaire de création d'un transporteur, étape "Frais de port"]_
+
+---
+
+## SEO du produit
+
+Le référencement naturel d'un produit se configure dans l'onglet **SEO** du produit.
+
+<Danger>
+N'oubliez jamais cette partie. Vous perdrez des points bêtement. 
+</Danger>
+
+Renseignez :
+
+- La **balise titre** (title tag) : le titre affiché dans les résultats Google
+- La **méta-description** : le résumé affiché sous le titre dans Google
+- Le **mot-clé** principal ciblé
+- L'**URL simplifiée** (alias) : PrestaShop la génère automatiquement, mais elle est modifiable
+
+<Tip>
+  L'URL simplifiée doit être courte, lisible et contenir le mot-clé principal. Évitez les accents et les espaces.
+</Tip>
+
+📸 _[Capture recommandée : onglet SEO d'un produit avec les champs remplis]_
+
