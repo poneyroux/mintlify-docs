@@ -13,26 +13,26 @@
       {
         "tab": "Wordpress",
         "pages": [
-          "index",
-          "presentation-du-backoffice",
-          "apparence",
-          "le-menu",
-          "creer-un-article-page",
-          "le-referencement",
-          "les-widgets",
-          "astuces-pour-l-examen"
+          "wordpress/index",
+          "wordpress/presentation-du-backoffice",
+          "wordpress/apparence",
+          "wordpress/le-menu",
+          "wordpress/creer-un-article-page",
+          "wordpress/le-referencement",
+          "wordpress/les-widgets",
+          "wordpress/astuces-pour-l-examen"
         ]
       },
       {
         "tab": "Prestashop",
         "pages": [
-          "api-reference/introduction",
-          "api-reference/creer-un-produit",
-          "api-reference/untitled-page",
-          "api-reference/les-commandes",
-          "api-reference/promotions",
-          "api-reference/modules",
-          "api-reference/equipe-and-acces"
+          "prestashop/introduction",
+          "prestashop/creer-un-produit",
+          "prestashop/clients",
+          "prestashop/les-commandes",
+          "prestashop/promotions",
+          "prestashop/modules",
+          "prestashop/equipe-and-acces"
         ]
       }
     ]
